@@ -1,0 +1,29 @@
+{% extends 'base.html' %}
+{% load static %}
+
+
+{% block extra_head %} <link rel="stylesheet" href="{% static 'projetos/projeto.css' %}"> {% endblock %}
+
+{% block title %}Projetos {% endblock %}
+
+{% block main %}
+    <div class="card margin_card1" style="width: 18rem;" >
+  <img class="card-img-top" src="{% static 'restFramework.png' %}" alt="Card image cap">
+  <div class="card-body color_body" >
+      <h5 class="card-title color_h5"> <strong>Lista de Tarefas</strong></h5>
+    <p class="card-text">
+        uma API onde o usuário pode criar, listar e excluir uma ou várias tarefas diárias a serem realizadas durante dia.
+    </p>
+    <a href="#" class="btn btn-primary">Servidor de tarefas</a>
+  </div>
+</div>
+
+<div class="card card2" style="width: 18rem;">
+  <img class="card-img-top" src="{% static  'django.jpeg' %}" alt="Card image cap">
+  <div class="card-body color_body">
+      <h5 class="card-title color_h5"><strong>Card title</strong></h5>
+    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+    <a href="#" class="btn btn-primary">Go somewhere</a>
+  </div>
+</div>
+{% endblock %}
